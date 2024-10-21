@@ -13,4 +13,10 @@ class EnvironmentTest extends TestCase
 
         self::assertEquals('DryyTech', $youtube);
     }
+
+    public function testDefauktEnv(){
+        $author = env('AUTHOR', 'Andry');
+
+        self::assertEquals('Andry', $author);
+    }
 }
